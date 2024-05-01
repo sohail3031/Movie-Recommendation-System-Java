@@ -1,0 +1,125 @@
+<h1 id="project-report">PROJECT Report</h1>
+<p>Author: Mohammed Sohail Ahmed, Nandhini Gopalakrishnan</p>
+<p>Date: 10-04-2024</p>
+<ol class="incremental" type="1">
+<li>Check <a href="readme.txt" class="uri">readme.txt</a> for lab work statement and self-evaluation.</li>
+<li>Check <a href="Steps.md" class="uri">Steps.md</a> for Project Execution Steps</li>
+</ol>
+<h2 id="project-requirements-project">Project Requirements (project)</h2>
+<h3 id="r1-write-a-project-proposal-2-3-pages.">R1 Write a project proposal (2-3 pages).</h3>
+<p>Complete? Yes</p>
+<p>If Yes, briefly describe:</p>
+<ol class="incremental" type="1">
+<li>what you have done, We built a “Movie Recommendation System” using the Java “Spring Boot” framework.</li>
+<li>what are the new features. We have implemented three different models:
+<ol class="incremental" type="1">
+<li>Cosine Similarity</li>
+<li>KNN Algorithm along with Cosine Similarity</li>
+<li>Tf-Idf Similarity</li>
+</ol></li>
+<li>Take some screen to demonstrate the features if applicable. <img src="images/R1-1-cosine-similarity.png" alt="Image caption" style="width:90.0%" /> <img src="images/R1-2-knn.png" alt="Image caption" style="width:90.0%" /> <img src="images/R1-3-tf-idf-similarity.png" alt="Image caption" style="width:90.0%" /></li>
+</ol>
+<h3 id="r2-design-data-format-collect-data-create-dataset-for-the-application.">R2 Design data format, collect data, create dataset for the application.</h3>
+<p>Complete? Yes</p>
+<p>If Yes, briefly describe:</p>
+<ol class="incremental" type="1">
+<li>what you have done, We have utilized two distinct datasets. The first dataset, “tmdb_5000_credits.csv” includes movie ID, title, cast, and crew details. The second dataset, “tmdb_5000_movies.csv” comprises information such as movie ID, title, rating, vote count, average votes, etc. We merged these two datasets based on title column to create a new, comprehensive one. Then we cleaned the data to handle the missing values.</li>
+<li>what are the new features. We have merged the two datasets and formed a new one. After data cleaning, we created a new column named “tags” which contains information from the overview, genres, cast, crew, and other similar columns.</li>
+<li>Take some screen to demonstrate the features if applicable. <img src="images/R2-1-data-cleaning.png" alt="Image caption" style="width:90.0%" /> <img src="images/R2-2-data-cleaning.png" alt="Image caption" style="width:90.0%" /> <img src="images/R2-3-data-cleaning.png" alt="Image caption" style="width:90.0%" /> <img src="images/R2-4-creating-new-feature.png" alt="Image caption" style="width:90.0%" /></li>
+</ol>
+<h3 id="r3-develop-and-implement-data-application-algorithms-for-the-proposed-application-problem.">R3 Develop and implement data application algorithms for the proposed application problem.</h3>
+<p>Complete? Yes</p>
+<p>If Yes, briefly describe:</p>
+<ol class="incremental" type="1">
+<li>what you have done, We utilized three different algorithms to determine which one recommends the most similar movies.</li>
+<li>what are the new features.
+<ol class="incremental" type="1">
+<li>In the Cosine Similarity algorithm, we utilized the “tags” feature column we created after cleaning the data to find the similarity between the movies.</li>
+<li>In the KNN algorithm, we employed the similarities from the “Cosine Similarity” algorithm to recommend similar movies.</li>
+<li>In the Tf-Idf Similarity algorithm, we used the “tags” feature column to calculate the tf-idf similarity score.</li>
+</ol></li>
+<li>Take some screen to demonstrate the features if applicable. <img src="images/R3-1-cosine-similarity.png" alt="Image caption" style="width:90.0%" /> <img src="images/R3-2-knn.png" alt="Image caption" style="width:90.0%" /> <img src="images/R3-3-tf-idf-similarity.png" alt="Image caption" style="width:90.0%" /></li>
+</ol>
+<h3 id="r4-do-data-computing-to-generate-models-representing-models-in-portable-format-and-stored-in-file-or-database.-more-credit-is-given-if-distributed-approach-is-used-data-mining-of-big-dataset.">R4 Do data computing to generate models, representing models in portable format and stored in file or database. More credit is given if distributed approach is used data mining of big dataset.</h3>
+<p>Complete? Yes</p>
+<p>If Yes, briefly describe:</p>
+<ol class="incremental" type="1">
+<li>what you have done, As answered in question 3, we have calculated the similarity scores using “Cosine Similarity” and “Tf-Idf Similarity”. We trained the model once and have saved the results for future use.</li>
+<li>what are the new features. We have saved the results of the “Cosine Similarity” model and the “Tf-Idf Similarity” model into files, which we are now using to make predictions.</li>
+<li>Take some screen to demonstrate the features if applicable. <img src="images/R4-1-data-files.png" alt="Image caption" style="width:90.0%" /></li>
+</ol>
+<h3 id="r5-create-deployable-service-components-using-application-models-using-java-based-enterprise-computing-technologies-to-create-client-program-to-do-remote-call-of-the-data-mining-services.">R5 Create deployable service components using application models using Java based enterprise computing technologies, to create client program to do remote call of the data mining services.</h3>
+<p>Complete? Yes</p>
+<p>If Yes, briefly describe:</p>
+<ol class="incremental" type="1">
+<li>what you have done,
+<ol class="incremental" type="1">
+<li>Deployed the application on an Apache Tomcat Server.</li>
+<li>Implemented features for recommending movies based on various algorithms (Cosine Similarity, KNN, and Tf-Idf).</li>
+<li>Trained models, calculated similarity scores, and provided movie recommendations.</li>
+</ol></li>
+<li>what are the new features.
+<ol class="incremental" type="1">
+<li>The application recommends movies using Cosine Similarity, KNN, and Tf-Idf algorithms.</li>
+<li>Users can select a movie, and the system suggests similar movies based on their choice.</li>
+</ol></li>
+<li>Take some screen to demonstrate the features if applicable. <img src="images/R5-1-web.png" alt="Image caption" style="width:90.0%" /> <img src="images/R5-2-web.png" alt="Image caption" style="width:90.0%" /> <img src="images/R5-3-eclipse.png" alt="Image caption" style="width:90.0%" /> <img src="images/R5-4-eclipse.png" alt="Image caption" style="width:90.0%" /></li>
+</ol>
+<h3 id="r6-deploy-service-components-onto-enterprise-application-servers.">R6 Deploy service components onto enterprise application servers.</h3>
+<p>Complete? Yes</p>
+<p>If Yes, briefly describe:</p>
+<ol class="incremental" type="1">
+<li>what you have done, We have deployed our web application on “Apache Tomcat Server”.</li>
+<li>what are the new features. We have deployed our application on the “Apache Tomcat Server” because it’s lightweight, capable of handling Java Servlets and JavaServer Pages (JSP), and provides a ready-to-use server environment.</li>
+<li>Take some screen to demonstrate the features if applicable. <img src="images/R6-1-pom-file.png" alt="Image caption" style="width:90.0%" /> <img src="images/R6-2-eclipse-output.png" alt="Image caption" style="width:90.0%" /></li>
+</ol>
+<h3 id="r7-create-web-services-soap-restful-to-use-the-data-service-components.">R7 Create web services (SOAP, RESTful) to use the data service components.</h3>
+<p>Complete? Yes</p>
+<p>If Yes, briefly describe:</p>
+<ol class="incremental" type="1">
+<li>what you have done, We have used “HTTP Requests &amp; Responses”.</li>
+<li>what are the new features. We haven’t created any RESTful or SOAP services. Instead, we just focused on “HTTP Requests &amp; Responses” to display recommended movies based on the selected movie. The only reason, why we have user “HTTP” inseard of reastful and soap services is because is “Simplicity &amp; Lightweight”, and “Ease of Integration”.</li>
+<li>Take some screen to demonstrate the features if applicable. <img src="images/R7-1-landing-page.png" alt="Image caption" style="width:90.0%" /> <img src="images/R7-2-recommend-movies-page.png" alt="Image caption" style="width:90.0%" /></li>
+</ol>
+<h3 id="r8-create-web-user-interfacemobile-applications-to-use-the-applicationweb-services.">R8 Create web user interface/mobile applications to use the application/web services.</h3>
+<p>Complete? Yes</p>
+<p>If Yes, briefly describe:</p>
+<ol class="incremental" type="1">
+<li>what you have done, We build a web application.</li>
+<li>what are the new features. We built a web application using the Java Spring Boot framework. The application includes a dropdown list where users can select any movie. When the user clicks the “Recommend” button, the application recommends similar movies based on the selected one. 🎥🔍</li>
+<li>Take some screen to demonstrate the features if applicable. <img src="images/R8-1-web.png" alt="Image caption" style="width:90.0%" /> <img src="images/R8-2-web-dropdown.png" alt="Image caption" style="width:90.0%" /> <img src="images/R8-3-recommended-movies.png" alt="Image caption" style="width:90.0%" /></li>
+</ol>
+<h3 id="r9-test-your-services-log-your-services-and-document-your-term-project.">R9 Test your services, log your services, and document your term project.</h3>
+<p>Complete? Yes</p>
+<p>If Yes, briefly describe:</p>
+<ol class="incremental" type="1">
+<li>what you have done, We have tested the web application.</li>
+<li>what are the new features. We have added the print statements to print the recommended movies and have verify that it matches with the on the web application.</li>
+<li>Take some screen to demonstrate the features if applicable. <img src="images/R9-1-web.png" alt="Image caption" style="width:90.0%" /> <img src="images/R9-2-web.png" alt="Image caption" style="width:90.0%" /> <img src="images/R9-3-eclipse-output.png" alt="Image caption" style="width:90.0%" /></li>
+</ol>
+<h3 id="r10-demonstrate-your-term-project-in-final-project-presentation-slides-short-video.">R10 Demonstrate your term project in final project presentation, slides, short video.</h3>
+<p>Complete? Yes</p>
+<p>If Yes, briefly describe:</p>
+<ol class="incremental" type="1">
+<li>what you have done, We have attached the following files:
+<ol class="incremental" type="1">
+<li>Presentation</li>
+<li>Video file</li>
+<li>Steps.txt file</li>
+<li>Screenshots</li>
+</ol></li>
+<li>what are the new features.
+<ol class="incremental" type="1">
+<li>We have attached a presentation that provides a brief description of the project, the models we are using, and more.</li>
+<li>A video file demonstrating how the project works.</li>
+<li>A Steps.txt file containing a brief description of the project and instructions on how to run it.</li>
+<li>There is a folder named “images” which contains the images and screenshots of the project.</li>
+</ol></li>
+<li>Take some screen to demonstrate the features if applicable. <img src="images/R10-1-files.png" alt="Image caption" style="width:90.0%" /></li>
+</ol>
+<p><strong>References</strong></p>
+<ol class="incremental" type="1">
+<li>CP630OC project</li>
+<li>Add your references if you used.</li>
+</ol>
+<p><strong>Renerences Used</strong> Dataset source: Various sources, including Kaggle. Java libraries: Weka API for machine learning, JDBC for database connectivity.</p>

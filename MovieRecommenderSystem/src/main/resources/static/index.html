@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Movie Recommendation System</title>
+</head>
+<body>
+	<form action="recommend-movies" method="get">
+		<center>
+			<h1>Movie Recommender System</h1>
+			<br />
+			<label id="movies-titles">Search Movies Here</p>
+			<select id="movies-titles" name="movies-titles">
+				<! -- <option th:each="title : ${titles}" th:value="${title}" th:text="${title}"><p th:each="title : ${titles}" th:value="${title}" th:text="${title}"></p></option> -->
+				<option th:text="${titles}">Movie Title</option>
+				
+			</select>
+			<br />
+			<br />
+			<button type="submit">Recommend</button>
+		</center>
+	</form>
+</body>
+</html>
