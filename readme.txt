@@ -1,43 +1,21 @@
-Name: Mohammed Sohail Ahmed, Nandhini Gopalakrishnan
-ID: 235807480, 235830000
-Email: moha0748@mylaurier.ca, gopa0000@mylaurier.ca
-WorkID: cp630-project
-Statement: I claim that the enclosed submission is my individual work.
+# Enterprise-Computing-Masters-Project
 
-Fill in the self-evaluation in the following evaluation grid.
-Symbols: Q -- Question, R - Requirement
-Field format: [self-evaluation/total marks/marker's evaluation]
+## Movie Recommendation System
 
-For example, you put your self-evaluation, say 2, like [2/2/*]. 
-If marker gives different evaluation value say 1, it will show 
-[2/2/1] in the marking report. 
+## About the Project
 
-Evaluation grid: [self-evaluation/total/marker-evaluation]
+Our project is a simple Content-Based Movie Recommendation System. We utilize movie content to recommend similar movies based on the selected one.
 
-Project
+## About Files
 
+Add the dataset to in the folder "dataset" under "Project\MovieRecommenderSystem\src\main\java\ec\project\dataset". You can get the dataset from the below link. After that train the algorithms, and run "MovieController.java".
 
-Requirements
+## About the Dataset
 
-R1 [30/30/*] Write a project proposal (2-3 pages).
+We use two different datasets for recommending movies:
 
-R2 [30/30/*] Design data format, collect data, create dataset for the application.
+1. tmdb_5000_credits.csv: This dataset contains columns such as movieId, title, cast, and crew information.
+2. tmdb_5000_movies.csv: This dataset includes columns like title, movieId, overview, genres, ratings, and more. We discovered this dataset on Kaggle and have attached it in the “dataset” folder. If you need more information about the dataset or cannot find it in the “dataset” folder, you can access it using the following link:
 
-R3 [30/30/*] Develop and implement data application algorithms for the proposed application problem.
+[Movie Recommendation System Dataset](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata)
 
-R4 [30/30/*] Do data computing to generate models, representing models in portable format and stored in file or database. More credit is given if distributed approach is used data mining of big dataset.
-
-R5 [30/30/*] Create deployable service components using application models using Java based enterprise computing technologies, to create client program to do remote call of the data mining services.
-
-R6 [30/30/*] Deploy service components onto enterprise application servers.
-
-R7 [30/30/*] Create web services (SOAP, RESTful) to use the data service components.
-
-R8 [30/30/*] Create web user interface/mobile applications to use the application/web services.
-
-R9 [30/30/*] Test your services, log your services, and document your term project.
-
-R10 [30/30/*] Demonstrate your term project in final project presentation, slides, short video.
-
-
-Total:                                    [300/300/*]
